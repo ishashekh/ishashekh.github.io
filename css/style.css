@@ -1,0 +1,186 @@
+html,
+body {
+    height: 100%;
+    /* Ensure full height for the body and html */
+    margin: 0;
+    /* Remove default margin */
+    display: flex;
+    /* Use flexbox for layout */
+    flex-direction: column;
+    /* Stack elements vertically */
+}
+
+main {
+    flex: 1;
+    /* Allow the main content to grow and fill available space */
+}
+
+body {
+    font-family: Raleway, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    /* White background */
+}
+
+header {
+    background: #324376;
+    /* Dark teal for header */
+    color: white;
+    padding: 15px 20px;
+    /* Added horizontal padding */
+}
+
+.container {
+    display: flex;
+    /* Flexbox for layout */
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    /* Centered content */
+    margin: 0 auto;
+}
+
+.logo img {
+    height: 50px;
+    /* Adjust the height for your logo */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    /* Flexbox for horizontal layout */
+}
+
+nav ul li {
+    margin: 0 20px;
+    /* Increased margin for better spacing */
+}
+
+nav ul li a {
+    color: #ffffff;
+    /* Light yellow for links */
+    text-decoration: none;
+    font-weight: bold;
+    /* Bold text for better visibility */
+    transition: color 0.3s;
+    /* Smooth transition for hover effect */
+}
+
+nav ul li a:hover {
+    color: #F68E5F;
+    /* Change link color on hover */
+}
+
+#hero {
+    text-align: center;
+    padding: 100px 20px;
+    /* Increased padding for a more spacious look */
+    /* background-color: #F5DD90; */
+    /* Light yellow background for hero section */
+    color: #324376;
+    /* Dark teal text for contrast */
+}
+
+.btn {
+    background: #586BA4;
+    /* Dark blue for button */
+    color: white;
+    padding: 12px 24px;
+    /* Increased padding for the button */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    /* Smooth transition for button hover */
+}
+
+.btn:hover {
+    background: #F76C5E;
+    /* Light coral on hover */
+}
+
+/* Footer starts */
+
+footer {
+    background-color: #586BA4;
+    /* Footer background color */
+    color: white;
+    /* Text color */
+    padding: 20px;
+    /* Padding for footer */
+    text-align: center;
+    /* Center align text */
+
+}
+
+.footer-container {
+    display: flex;
+    /* Use flexbox for layout */
+    justify-content: space-between;
+    /* Space out sections */
+    flex-wrap: wrap;
+    /* Allow wrapping for smaller screens */
+    max-width: 1200px;
+    /* Max width for the footer */
+    margin: 0 auto;
+    /* Center the container */
+}
+
+.footer-section {
+    flex: 1;
+    /* Equal width for each section */
+    padding: 10px;
+    /* Spacing inside each section */
+    min-width: 150px;
+    /* Minimum width for responsiveness */
+}
+
+.footer-section h3,
+.footer-section h4 {
+    margin-bottom: 10px;
+    /* Spacing below headings */
+    font-size: 1.2em;
+    /* Heading font size */
+}
+
+.btn {
+    background: #F76C5E;
+    /* Button color */
+    color: white;
+    /* Button text color */
+    padding: 10px 15px;
+    /* Button padding */
+    text-decoration: none;
+    /* Remove underline */
+    border-radius: 5px;
+    /* Rounded corners */
+}
+
+.btn:hover {
+    background: #F68E5F;
+    /* Darker shade on hover */
+}
+
+.social-media {
+    margin-top: 20px;
+    /* Spacing above social media section */
+}
+
+.social-media a {
+    color: white;
+    /* Link color */
+    margin: 0 10px;
+    /* Spacing between icons */
+    text-decoration: none;
+    /* Remove underline */
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+    /* Underline on hover */
+}
+
+
+/* Footer ends */
