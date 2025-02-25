@@ -108,18 +108,18 @@ footer {
     /* Footer background color */
     color: white;
     /* Text color */
-    padding: 20px;
+    padding: 40px 20px;
     /* Padding for footer */
     text-align: center;
     /* Center align text */
-
 }
 
+/* Footer container */
 .footer-container {
     display: flex;
     /* Use flexbox for layout */
-    justify-content: space-between;
-    /* Space out sections */
+    justify-content: space-around;
+    /* Evenly space sections */
     flex-wrap: wrap;
     /* Allow wrapping for smaller screens */
     max-width: 1200px;
@@ -128,34 +128,59 @@ footer {
     /* Center the container */
 }
 
+/* Footer section */
 .footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     flex: 1;
-    /* Equal width for each section */
-    padding: 10px;
-    /* Spacing inside each section */
-    min-width: 150px;
-    /* Minimum width for responsiveness */
+    padding: 15px;
+    min-width: 200px;
+    /* Adjust for responsiveness */
 }
 
+/* Icon styles */
+.icon-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #F76C5E;
+    /* Icon background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    transition: background 0.3s ease-in-out;
+}
+
+.icon-circle i {
+    color: white;
+    font-size: 24px;
+}
+
+/* Icon hover effect */
+.icon-circle:hover {
+    background-color: #F68E5F;
+    /* Change color on hover */
+}
+
+/* Footer headings */
 .footer-section h3,
 .footer-section h4 {
-    margin-bottom: 10px;
-    /* Spacing below headings */
-    font-size: 1.2em;
-    /* Heading font size */
+    margin-bottom: 8px;
+    font-size: 1.3em;
 }
 
+/* Button styles */
 .btn {
     background: #F76C5E;
     /* Button color */
     color: white;
-    /* Button text color */
     padding: 10px 15px;
-    /* Button padding */
     text-decoration: none;
-    /* Remove underline */
     border-radius: 5px;
-    /* Rounded corners */
+    transition: background 0.3s ease-in-out;
 }
 
 .btn:hover {
@@ -163,24 +188,44 @@ footer {
     /* Darker shade on hover */
 }
 
+/* Social Media Section */
 .social-media {
-    margin-top: 20px;
-    /* Spacing above social media section */
+    margin-top: 30px;
+}
+
+.social-media h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
 }
 
 .social-media a {
     color: white;
-    /* Link color */
-    margin: 0 10px;
-    /* Spacing between icons */
+    margin: 0 12px;
     text-decoration: none;
-    /* Remove underline */
+    font-size: 1.2em;
+    display: inline-flex;
+    align-items: center;
+}
+
+.social-media a i {
+    margin-right: 8px;
 }
 
 .social-media a:hover {
     text-decoration: underline;
-    /* Underline on hover */
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
 
 /* Footer ends */
